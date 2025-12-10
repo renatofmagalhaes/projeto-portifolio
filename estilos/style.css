@@ -41,7 +41,7 @@ header {
 
 nav#menu ul{
   list-style: none;
-  gap: 10px;
+  gap: 5px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
