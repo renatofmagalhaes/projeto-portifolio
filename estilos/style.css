@@ -68,17 +68,17 @@ main {
   margin-top: 20px;
 }
 
-section {
+section#geral{
   grid-column: 2;
   background-color: var(--fundo-card);
   border-radius: 8px;
 }
 
-section div#ficha {
+div#ficha {
   padding: 20px;
 }
 
-section div#ficha img.foto {
+div#ficha img.foto {
   width: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -91,14 +91,14 @@ section div#ficha img.foto {
   margin-bottom: 15px;
 }
 
-section div#ficha h1 {
+div#ficha h1 {
   color: var(--destaque);
   margin: 15px 0;
   font-size: 1.5em;
   text-align: left;
 }
 
-section div#social {
+div#social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,11 +107,43 @@ section div#social {
   margin-top: 15px;
 }
 
-section div#social a {
+div#social a {
   color: var(--destaque);
   transition: color 0.5s;
 }
 
-section div#social a:hover {
+div#social a:hover {
   color: var(--destaque-inverso);
+}
+
+section#detalhes {
+  grid-column: 2;
+}
+
+article {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+article h2 {
+  color: var(--destaque);
+  margin-bottom: 15px;
+}
+
+article#video .video-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
